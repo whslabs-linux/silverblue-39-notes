@@ -54,3 +54,14 @@ rpm-ostree override remove \
 ```sh
 rpm-ostree install vim
 ```
+# Install firefox addons and user.js
+```sh
+(
+profile=$(find ~/.mozilla/firefox/ -type d -name '*.default-release')
+mkdir -p $profile/extentions
+curl -o $profile/extensions/@testpilot-containers.xpi https://addons.mozilla.org/firefox/downloads/file/4186050/multi_account_containers-8.1.3.xpi
+curl -o $profile/extensions/keepassxc-browser@keepassxc.org.xpi https://addons.mozilla.org/firefox/downloads/file/4250129/keepassxc_browser-1.9.0.2.xpi
+curl -o $profile/extensions/uBlock0@raymondhill.net.xpi https://addons.mozilla.org/firefox/downloads/file/4237670/ublock_origin-1.56.0.xpi
+curl -O --output-dir $profile https://raw.githubusercontent.com/arkenfox/user.js/master/user.js
+)
+```
