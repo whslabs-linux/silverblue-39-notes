@@ -50,10 +50,6 @@ rpm-ostree override remove \
 	email = hswongac@gmail.com
 	name = whs
 ```
-# Install vim
-```sh
-rpm-ostree install vim
-```
 # Install firefox addons and user.js
 ```sh
 (
