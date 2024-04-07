@@ -56,7 +56,7 @@ rpm-ostree install \
   ;
 ```
 ```sh
-sudo systemctl enable libvirtd --now
+sudo systemctl enable --now libvirtd
 ```
 ```sh
 grep -E '^libvirt:' /usr/lib/group | sudo tee -a /etc/group
