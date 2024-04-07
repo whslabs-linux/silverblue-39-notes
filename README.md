@@ -55,6 +55,9 @@ rpm-ostree install \
   virt-viewer \
   ;
 ```
+```sh
+sudo systemctl enable libvirtd --now
+```
 # Install packer
 https://github.com/hashicorp/packer
 ```sh
