@@ -73,3 +73,7 @@ curl -O https://releases.hashicorp.com/packer/1.10.2/packer_1.10.2_linux_amd64.z
 sudo unzip -d /usr/local/bin packer_*_linux_amd64.zip packer
 rm packer_*_linux_amd64.zip
 ```
+# Install brasero
+```sh
+rpm-ostree install brasero
+```
