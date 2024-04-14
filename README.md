@@ -77,3 +77,12 @@ rm packer_*_linux_amd64.zip
 ```sh
 rpm-ostree install brasero
 ```
+# Install nix
+```sh
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+mkdir -p ~/.config/nix
+cat<<EOF>~/.config/nix/nix.conf
+experimental-features = nix-command flakes
+EOF
+```
