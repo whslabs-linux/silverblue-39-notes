@@ -13,8 +13,10 @@ rm borg-linuxnew64
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 ```sh
+flatpak install -y flathub com.github.tchx84.Flatseal
 flatpak install -y flathub com.gitlab.davem.ClamTk
 flatpak install -y flathub org.filezillaproject.Filezilla
+flatpak install -y flathub org.gnome.Music
 flatpak install -y flathub org.keepassxc.KeePassXC
 ```
 # Install rpmfusion
