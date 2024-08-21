@@ -1,3 +1,7 @@
+# Config git
+```sh
+git config --global core.symlinks false
+```
 # Install borgbackup
 ```sh
 curl -OL https://github.com/borgbackup/borg/releases/download/1.2.8/borg-linuxnew64
