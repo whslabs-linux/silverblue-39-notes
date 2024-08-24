@@ -77,7 +77,7 @@ sudo usermod -aG libvirt $USER
 # Install packer
 https://github.com/hashicorp/packer
 ```sh
-curl -O https://releases.hashicorp.com/packer/1.10.2/packer_1.10.2_linux_amd64.zip
+curl -O https://releases.hashicorp.com/packer/1.11.2/packer_1.11.2_linux_amd64.zip
 sudo unzip -d /usr/local/bin packer_*_linux_amd64.zip packer
 rm packer_*_linux_amd64.zip
 ```
