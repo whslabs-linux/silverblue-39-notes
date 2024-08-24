@@ -4,9 +4,9 @@ git config --global core.symlinks false
 ```
 # Install borgbackup
 ```sh
-curl -OL https://github.com/borgbackup/borg/releases/download/1.2.8/borg-linuxnew64
-sudo install borg-linuxnew64 /usr/local/bin/borg
-rm borg-linuxnew64
+curl -OL https://github.com/borgbackup/borg/releases/download/1.4.0/borg-linux-glibc231
+sudo install borg-linux-glibc* /usr/local/bin/borg
+rm borg-linux-glibc*
 ```
 # Install flatpaks
 ```sh
