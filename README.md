@@ -103,7 +103,8 @@ LocalSocket /run/clamd.scan/clamd.sock
 # /etc/systemd/system/clamav-clamonacc.service.d/override.conf
 [Service]
 ExecStart=
-ExecStart=/usr/sbin/clamonacc -F --fdpass -v --config-file=/etc/clamd.d/scan.con```
+ExecStart=/usr/sbin/clamonacc -F --fdpass -v --config-file=/etc/clamd.d/scan.conf
+```
 ```sh
 sudo freshclam
 sudo setsebool -P antivirus_can_scan_system 1
