@@ -16,7 +16,6 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install -y flathub com.github.tchx84.Flatseal
 flatpak install -y flathub org.filezillaproject.Filezilla
 flatpak install -y flathub org.keepassxc.KeePassXC
-flatpak install -y flathub org.winehq.Wine
 ```
 # Install rpmfusion
 ```sh
