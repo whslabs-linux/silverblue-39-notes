@@ -16,6 +16,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install -y flathub com.github.tchx84.Flatseal
 flatpak install -y flathub org.filezillaproject.Filezilla
 flatpak install -y flathub org.keepassxc.KeePassXC
+flatpak install -y flathub org.winehq.Wine
 ```
 # Install rpmfusion
 ```sh
@@ -91,4 +92,22 @@ mkdir -p ~/.config/nix
 cat<<EOF>~/.config/nix/nix.conf
 experimental-features = nix-command flakes
 EOF
+```
+# Install clamav
+```sh
+rpm-ostree install -y clamav clamd clamav-update
+```
+```txt
+# /etc/clamd.d/scan.conf
+LocalSocket /run/clamd.scan/clamd.sock
+# /etc/systemd/system/clamav-clamonacc.service.d/override.conf
+[Service]
+ExecStart=
+ExecStart=/usr/sbin/clamonacc -F --fdpass -v --config-file=/etc/clamd.d/scan.con```
+```sh
+sudo freshclam
+sudo setsebool -P antivirus_can_scan_system 1
+sudo systemctl enable --now clamav-clamonacc
+sudo systemctl enable --now clamav-freshclam
+sudo systemctl enable --now clamd@scan
 ```
