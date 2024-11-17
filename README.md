@@ -4,7 +4,7 @@ git config --global core.symlinks false
 ```
 # Install borgbackup
 ```sh
-curl -OL https://github.com/borgbackup/borg/releases/download/1.4.0/borg-linux-glibc231
+curl -OL https://github.com/borgbackup/borg/releases/download/1.4.0/borg-linux-glibc236
 sudo install borg-linux-glibc* /usr/local/bin/borg
 rm borg-linux-glibc*
 ```
