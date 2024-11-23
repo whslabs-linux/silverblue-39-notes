@@ -68,10 +68,6 @@ rpm-ostree install \
 ```sh
 sudo systemctl enable --now libvirtd
 ```
-```sh
-grep -E '^libvirt:' /usr/lib/group | sudo tee -a /etc/group
-sudo usermod -aG libvirt $USER
-```
 # Install packer
 https://github.com/hashicorp/packer
 ```sh
