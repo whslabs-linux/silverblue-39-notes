@@ -83,10 +83,6 @@ rpm-ostree install brasero
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
 . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
-mkdir -p ~/.config/nix
-cat<<EOF>~/.config/nix/nix.conf
-experimental-features = nix-command flakes
-EOF
 ```
 # Install clamav
 ```sh
