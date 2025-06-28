@@ -20,16 +20,6 @@ curl -O https://releases.hashicorp.com/packer/1.13.1/packer_1.13.1_linux_amd64.z
 unzip -d ~/.local/bin packer_1.13.1_linux_amd64.zip packer
 rm packer_1.13.1_linux_amd64.zip
 ```
-# Install rust
-```sh
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-. "$HOME/.cargo/env"
-rpm-ostree install gcc
-```
-# Remove rust
-```sh
-rustup self uninstall
-```
 # Install flatpaks
 ```sh
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
