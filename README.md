@@ -85,10 +85,6 @@ sudo systemctl enable --now libvirtd
 rpm-ostree install brasero
 ```
 # Install nix
-```sh
-export NIX_TARBALL_URL=https://releases.nixos.org/nix/nix-2.29.1/nix-2.29.1-x86_64-linux.tar.xz
-. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
-```
 ```txt
 # /etc/nix/nix.custom.conf
 trusted-users = whs
