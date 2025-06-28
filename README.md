@@ -18,6 +18,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 . "$HOME/.cargo/env"
 rpm-ostree install gcc
 ```
+# Remove rust
 ```sh
 rustup self uninstall
 ```
