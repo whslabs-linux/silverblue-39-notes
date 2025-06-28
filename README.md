@@ -95,7 +95,7 @@ export NIX_TARBALL_URL=https://releases.nixos.org/nix/nix-2.29.1/nix-2.29.1-x86_
 . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
 ```
 ```txt
-# /etc/nix/nix.conf
+# /etc/nix/nix.custom.conf
 trusted-users = whs
 ```
 ```sh
