@@ -7,10 +7,18 @@ git config --global core.symlinks false
 mkdir -p ~/.local/bin
 ```
 # Install borgbackup
+https://github.com/borgbackup/borg
 ```sh
 curl -OL https://github.com/borgbackup/borg/releases/download/1.4.1/borg-linux-glibc236
 install borg-linux-glibc236 ~/.local/bin/borg
 rm borg-linux-glibc236
+```
+# Install packer
+https://github.com/hashicorp/packer
+```sh
+curl -O https://releases.hashicorp.com/packer/1.13.1/packer_1.13.1_linux_amd64.zip
+unzip -d ~/.local/bin packer_1.13.1_linux_amd64.zip packer
+rm packer_1.13.1_linux_amd64.zip
 ```
 # Install rust
 ```sh
@@ -81,13 +89,6 @@ rpm-ostree install \
 ```
 ```sh
 sudo systemctl enable --now libvirtd
-```
-# Install packer
-https://github.com/hashicorp/packer
-```sh
-curl -O https://releases.hashicorp.com/packer/1.13.1/packer_1.13.1_linux_amd64.zip
-unzip -d ~/.local/bin packer_1.13.1_linux_amd64.zip packer
-rm packer_1.13.1_linux_amd64.zip
 ```
 # Install brasero
 ```sh
