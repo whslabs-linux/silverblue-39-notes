@@ -48,9 +48,9 @@ rpm-ostree install \
 ```
 ```sh
 rpm-ostree kargs \
-  --append=modprobe.blacklist=nouveau \
+  --append=modprobe.blacklist=nouveau,nova-core \
   --append=nvidia-drm.modeset=1 \
-  --append=rd.driver.blacklist=nouveau \
+  --append=rd.driver.blacklist=nouveau,nova-core \
   ;
 ```
 # Install ffmpeg
