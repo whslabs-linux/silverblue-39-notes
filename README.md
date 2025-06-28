@@ -84,14 +84,6 @@ sudo systemctl enable --now libvirtd
 ```sh
 rpm-ostree install brasero
 ```
-# Install nix
-```txt
-# /etc/nix/nix.custom.conf
-trusted-users = whs
-```
-```sh
-sudo systemctl restart nix-daemon
-```
 # Install clamav
 ```sh
 rpm-ostree install -y clamav clamd clamav-update
@@ -110,4 +102,12 @@ sudo setsebool -P antivirus_can_scan_system 1
 sudo systemctl enable --now clamav-clamonacc
 sudo systemctl enable --now clamav-freshclam
 sudo systemctl enable --now clamd@scan
+```
+# Install nix
+```txt
+# /etc/nix/nix.custom.conf
+trusted-users = whs
+```
+```sh
+sudo systemctl restart nix-daemon
 ```
