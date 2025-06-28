@@ -18,6 +18,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 . "$HOME/.cargo/env"
 rpm-ostree install gcc
 ```
+```sh
+rustup self uninstall
+```
 # Install flatpaks
 ```sh
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
