@@ -2,11 +2,15 @@
 ```sh
 git config --global core.symlinks false
 ```
+# Create bin directory
+```sh
+mkdir -p ~/.local/bin
+```
 # Install borgbackup
 ```sh
-curl -OL https://github.com/borgbackup/borg/releases/download/1.4.0/borg-linux-glibc236
-sudo install borg-linux-glibc* /usr/local/bin/borg
-rm borg-linux-glibc*
+curl -OL https://github.com/borgbackup/borg/releases/download/1.4.1/borg-linux-glibc236
+install borg-linux-glibc236 ~/.local/bin/borg
+rm borg-linux-glibc236
 ```
 # Install flatpaks
 ```sh
