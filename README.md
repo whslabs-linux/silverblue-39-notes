@@ -12,6 +12,10 @@ curl -OL https://github.com/borgbackup/borg/releases/download/1.4.1/borg-linux-g
 install borg-linux-glibc236 ~/.local/bin/borg
 rm borg-linux-glibc236
 ```
+# Install rust
+```sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 # Install flatpaks
 ```sh
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
