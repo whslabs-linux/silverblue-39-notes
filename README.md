@@ -105,7 +105,7 @@ sudo systemctl enable --now clamd@scan
 ```
 # Install nix
 ```txt
-# /etc/nix/nix.custom.conf
+# /etc/nix/nix.conf
 trusted-users = whs
 ```
 ```sh
