@@ -128,3 +128,9 @@ transient = true
 ```sh
 rpm-ostree initramfs-etc --track=/etc/ostree/prepare-root.conf
 ```
+```sh
+rpm-ostree update
+flatpak update -y
+nix flake update --flake ~/.config/home-manager
+home-manager init --switch --impure
+```
