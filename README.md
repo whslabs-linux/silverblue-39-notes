@@ -25,6 +25,12 @@ flatpak install -y flathub com.github.tchx84.Flatseal
 flatpak install -y flathub org.filezillaproject.Filezilla
 flatpak install -y flathub org.keepassxc.KeePassXC
 ```
+```sh
+flatpak info --show-permissions org.keepassxc.KeePassXC
+```
+```sh
+flatpak override --unshare=network
+```
 # Install rpmfusion
 ```sh
 rpm-ostree install \
