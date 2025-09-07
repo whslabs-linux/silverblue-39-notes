@@ -70,8 +70,10 @@ rpm-ostree override remove \
 ```
 # Install virt-manager
 ```sh
+dnf group info Virtualization
+```
+```sh
 rpm-ostree install \
-  libguestfs-tools \
   libvirt-daemon-config-network \
   libvirt-daemon-kvm \
   qemu-kvm \
