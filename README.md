@@ -12,9 +12,10 @@ rm borg-linux-glibc236
 # Install packer
 https://github.com/hashicorp/packer
 ```sh
-curl -O https://releases.hashicorp.com/packer/1.13.1/packer_1.13.1_linux_amd64.zip
-unzip -d ~/.local/bin packer_1.13.1_linux_amd64.zip packer
-rm packer_1.13.1_linux_amd64.zip
+curl -O https://releases.hashicorp.com/packer/1.14.1/packer_1.14.1_linux_amd64.zip
+unzip packer_1.14.1_linux_amd64.zip packer
+sudo install packer /usr/local/bin
+rm packer_1.14.1_linux_amd64.zip packer
 ```
 # Install flatpaks
 ```sh
