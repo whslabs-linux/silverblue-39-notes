@@ -6,7 +6,7 @@ git config --global core.symlinks false
 https://github.com/borgbackup/borg
 ```sh
 curl -OL https://github.com/borgbackup/borg/releases/download/1.4.1/borg-linux-glibc236
-install borg-linux-glibc236 ~/.local/bin/borg
+sudo install borg-linux-glibc236 /usr/local/bin/borg
 rm borg-linux-glibc236
 ```
 # Install packer
