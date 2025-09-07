@@ -2,10 +2,6 @@
 ```sh
 git config --global core.symlinks false
 ```
-# Create bin directory
-```sh
-mkdir -p ~/.local/bin
-```
 # Install borgbackup
 https://github.com/borgbackup/borg
 ```sh
