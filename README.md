@@ -30,7 +30,7 @@ flatpak install -y flathub org.keepassxc.KeePassXC
 flatpak info --show-permissions org.keepassxc.KeePassXC
 ```
 ```sh
-flatpak override --unshare=network
+sudo flatpak override --unshare=network
 ```
 # Install rpmfusion
 ```sh
