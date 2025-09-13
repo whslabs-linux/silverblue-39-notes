@@ -31,6 +31,7 @@ flatpak info --show-permissions org.keepassxc.KeePassXC
 ```
 ```sh
 sudo flatpak override --unshare=network
+sudo flatpak override --share=network org.filezillaproject.Filezilla
 ```
 # Install rpmfusion
 ```sh
@@ -115,13 +116,6 @@ trusted-users = whs
 ```
 ```sh
 sudo systemctl restart nix-daemon
-```
-```sh
-rpm-ostree kargs --delete=rootflags=subvol=root --append=rootflags=subvol=root,compress=zstd:1
-```
-```txt
-# /etc/fstab
-#UUID=[UUID] / btrfs subvol=root,compress=zstd:1,x-systemd.device-timeout=0,ro 0 0
 ```
 ```txt
 # /etc/ostree/prepare-root.conf
