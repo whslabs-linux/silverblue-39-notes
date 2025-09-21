@@ -55,6 +55,10 @@ rpm-ostree kargs \
   --append=rd.driver.blacklist=nouveau,nova-core \
   ;
 ```
+Smplayer preference > advanced > mplayer/mpv > options
+```txt
+--vo=gpu-next --gpu-api=vulkan --hwdec=vulkan --gpu-context=waylandvk
+```
 # Install amd driver
 ```sh
 rpm-ostree override remove mesa-va-drivers --install mesa-va-drivers-freeworld
