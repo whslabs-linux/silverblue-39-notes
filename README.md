@@ -68,15 +68,16 @@ rpm-ostree override remove mesa-vulkan-drivers --install mesa-vulkan-drivers-fre
 # Install ffmpeg
 ```sh
 rpm-ostree override remove \
-  ffmpeg-free \
-  libavcodec-free \
-  libavdevice-free \
-  libavfilter-free \
-  libavformat-free \
-  libavutil-free \
-  libpostproc-free \
-  libswresample-free \
-  libswscale-free \
+    fdk-aac-free \
+    ffmpeg-free \
+    libavcodec-free \
+    libavdevice-free \
+    libavfilter-free \
+    libavformat-free \
+    libavutil-free \
+    libpostproc-free \
+    libswresample-free \
+    libswscale-free \
   --install ffmpeg
 ```
 # Install virt-manager
