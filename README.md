@@ -2,6 +2,11 @@
 ```sh
 git config --global core.symlinks false
 ```
+# Mask remote desktop and sshd
+```sh
+sudo systemctl mask gnome-remote-desktop
+sudo systemctl mask sshd
+```
 # Install borgbackup
 https://github.com/borgbackup/borg
 ```sh
