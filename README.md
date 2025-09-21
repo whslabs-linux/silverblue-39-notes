@@ -96,6 +96,9 @@ rpm-ostree install \
 ```sh
 sudo systemctl enable --now libvirtd
 ```
+```sh
+rpm-ostree install libguestfs-tools
+```
 # Install brasero
 ```sh
 rpm-ostree install brasero
