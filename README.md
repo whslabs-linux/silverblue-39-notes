@@ -55,6 +55,12 @@ rpm-ostree kargs \
   --append=rd.driver.blacklist=nouveau,nova-core \
   ;
 ```
+# Install amd driver
+```sh
+rpm-ostree override remove mesa-va-drivers --install mesa-va-drivers-freeworld
+rpm-ostree install mesa-vdpau-drivers-freeworld
+rpm-ostree override remove mesa-vulkan-drivers --install mesa-vulkan-drivers-freeworld
+```
 # Install ffmpeg
 ```sh
 rpm-ostree override remove \
