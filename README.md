@@ -10,9 +10,9 @@ sudo systemctl mask sshd
 # Install borgbackup
 https://github.com/borgbackup/borg
 ```sh
-curl -OL https://github.com/borgbackup/borg/releases/download/1.4.1/borg-linux-glibc236
-sudo install borg-linux-glibc236 /usr/local/bin/borg
-rm borg-linux-glibc236
+curl -OL https://github.com/borgbackup/borg/releases/download/1.4.2/borg-linux-glibc235-x86_64-gh
+sudo install borg-linux-glibc235-x86_64-gh /usr/local/bin/borg
+rm borg-linux-glibc235-x86_64-gh
 ```
 # Install packer
 https://github.com/hashicorp/packer
